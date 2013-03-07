@@ -33,6 +33,15 @@ public class QueryProcessorTest {
         assertNotNull(result);
         assertThat(result, is("mingas"));
     }
+    
+    
+    @Test
+    public void squareQube(){
+    	String result = new QueryProcessor().process("0: which of the following numbers is both a square and a cube: 164, 324, 417, 441");
+        assertNotNull(result);
+        assertThat(result, is(""));
+    }
+//"493b1a40: which of the following numbers is the largest: 721, 60, 34, 181";
 
 
 
