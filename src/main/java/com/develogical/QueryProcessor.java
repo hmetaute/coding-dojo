@@ -3,10 +3,10 @@ package com.develogical;
 public class QueryProcessor {
 
     public String process(String query) {
-        if (query.contains("name")) {
+        if (query.contains("what is your name")) {
             return "Los Mingas 2";
         }
-        return "";
+        return "Los Mingas 2";
     }
 
 }

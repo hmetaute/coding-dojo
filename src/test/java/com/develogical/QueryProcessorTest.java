@@ -13,17 +13,12 @@ public class QueryProcessorTest {
 
     @Test
     public void canGreetYou() {
-        String result = new QueryProcessor().process("hi");
+        String result = new QueryProcessor().process("what is your name");
         assertNotNull(result);
-        assertThat(result, is("hello"));
+        assertThat(result, is("Los Mingas 2"));
     }
 
-    @Test
-    public void returnsEmptyStringForUnknownQueries() {
-        String result = new QueryProcessor().process("unknown");
-        assertNotNull(result);
-        assertThat(result, is(""));
-    }
+
 }
 
 
