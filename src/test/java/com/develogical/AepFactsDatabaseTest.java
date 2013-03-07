@@ -16,6 +16,7 @@ public class AepFactsDatabaseTest {
       assertNotNull(result);
       assertThat(result.get(Key.TEXT), containsString("Oxford University"));
       assertThat(result.get(Key.IMAGE), containsString("photo.jpg"));
+      assertTrue(false);
   }
 
 }
