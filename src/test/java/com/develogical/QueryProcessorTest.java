@@ -15,7 +15,7 @@ public class QueryProcessorTest {
 
     @Test
     public void largestNumber() {
-        String result = new QueryProcessor().process("1223234: which of the following numbers is the largest: 46 31");
+        String result = new QueryProcessor().process("1223234: which of the following numbers is the largest: 46, 31");
         assertNotNull(result);
         assertThat(result, is("46"));
     }
