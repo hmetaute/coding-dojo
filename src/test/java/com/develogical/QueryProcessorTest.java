@@ -37,7 +37,7 @@ public class QueryProcessorTest {
     
     @Test
     public void squareQube(){
-    	String result = new QueryProcessor().process("0: which of the following numbers is both a square and a cube: 164, 324, 417, 441");
+    	String result = new QueryProcessor().process("0: which of the following numbers is both a square and a cube: 995, 324");
         assertNotNull(result);
         assertThat(result, is(""));
     }
