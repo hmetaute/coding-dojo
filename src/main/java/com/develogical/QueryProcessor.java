@@ -37,6 +37,12 @@ public class QueryProcessor {
         			return p + "";
         		}
         	}        	        	
+        }else if(query.contains("multiplied")){
+        	String partido[] = query.split("what is ");
+        	String numeros[] = partido[1].split(" multiplied by ");
+        	Integer primerNumero = Integer.parseInt(numeros[0]);
+        	Integer segundoNumero = Integer.parseInt(numeros[1]);
+        	return (primerNumero * segundoNumero) + "";
         }
         
         return ""; //buque

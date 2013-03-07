@@ -41,8 +41,16 @@ public class QueryProcessorTest {
         assertNotNull(result);
         assertThat(result, is(""));
     }
+    
+    
+    @Test
+    public void multiply(){
+    	String result = new QueryProcessor().process("what is 19 multiplied by 8");
+        assertNotNull(result);
+        assertThat(result, is("152"));
+    }
 //"493b1a40: which of the following numbers is the largest: 721, 60, 34, 181";
-
+//0 bytes=4    what is 19 multiplied by 8
 
 
 }
