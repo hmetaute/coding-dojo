@@ -19,6 +19,14 @@ public class QueryProcessorTest {
         assertNotNull(result);
         assertThat(result, is("46"));
     }
+    
+    @Test
+    public void canSumTwoNumbers() {
+        String result = new QueryProcessor().process("what is 20 plus 15");
+        assertNotNull(result);
+        assertThat(result, is("35"));
+    }
+
 
 
 }

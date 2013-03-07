@@ -11,8 +11,15 @@ public class QueryProcessor {
         	
         	return Math.max(primerNumero, segundoNumero) + "";
             
+        }else if(query.contains("plus")){
+        	String partido[] = query.split("what is ");
+        	String numeros[] = partido[1].split(" plus ");
+        	Integer primerNumero = Integer.parseInt(numeros[0]);
+        	Integer segundoNumero = Integer.parseInt(numeros[1]);
+        	return (primerNumero + segundoNumero) + "";
         }
-        return "mingas";
+        return "";
+        
     }
 
 }
