@@ -14,7 +14,7 @@ import static org.junit.matchers.JUnitMatchers.containsString;
 public class QueryProcessorTest {
 
     @Test
-    public void canGreetYou() {
+    public void largestNumber() {
         String result = new QueryProcessor().process("which of the following numbers is the largest: 46 31");
         assertNotNull(result);
         assertThat(result, is("46"));
@@ -25,6 +25,13 @@ public class QueryProcessorTest {
         String result = new QueryProcessor().process("what is 20 plus 15");
         assertNotNull(result);
         assertThat(result, is("35"));
+    }
+    
+    @Test
+    public void canGreetYou(){
+    	String result = new QueryProcessor().process("what is your name");
+        assertNotNull(result);
+        assertThat(result, is("mingas"));
     }
 
 
